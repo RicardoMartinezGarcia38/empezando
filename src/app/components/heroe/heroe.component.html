@@ -1,0 +1,24 @@
+<h1>{{ heroe.nombre }}<small>edad del heroe</small></h1>
+<hr>
+
+<div class="row animated fadeIn">
+
+    <div class="col-md-4">
+        <img [src]="heroe.img" alt="hero.nombre" width="250" height="350">
+        <br><br>
+        <a [routerLink]="['/heroes']" type="button" name="button" class="btn btn-outline-primary btn-block" style="background-color: rgb(11, 11, 12)">Regresar</a>
+    </div>
+
+    <div class="col-md-8">
+        <h3>{{ heroe.apodo}}</h3>
+        <hr>
+        <p>
+            {{ heroe.bio }}
+        </p>
+    </div>
+    <div>
+        <img class="img-logo" [src]="heroe.casa" alt="heroe.nombre">
+    </div>
+
+
+</div>
