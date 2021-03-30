@@ -28,7 +28,7 @@ import { HeroesComponent } from '../heroes/heroes.component';
                 aparicion: 'World of Warcraft',
                 casa: 'assets/img/alianzalogo.png',
                 apodo: 'Guerrera Nocturna',
-                edad: ''},
+                edad: '8532 Años'},
                 {
                 nombre: 'Silvanas',
                 bio: 'Titulada a veces también como "la Dama Oscura" o como "la Reina alma en pena", es la líder suprema de los Renegados, una de las facciones más poderosas de no-muertos en Azeroth. En vida, Sylvanas fue la General Forestal de Lunargenta, cuyo liderazgo y proezas marciales fueron sin igual. Durante la Tercera Guerra, defendió con valentía Quel Thalas de una invasión de la Plaga dirigida por el caballero de la muerte Arthas Menethil. Al final, sin embargo, Sylvanas cayó en batalla. En lugar de honrar a la General Forestal con una muerte rápida, Arthas arrancó su alma y la transformó en una alma en pena: una agente astuta y vengadora del Rey Exánime, apoderada por el odio.',
