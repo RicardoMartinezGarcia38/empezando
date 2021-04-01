@@ -12,7 +12,7 @@ import { HeroesComponent } from '../heroes/heroes.component';
                 aparicion: 'World of Warcraft',
                 casa: 'assets/img/alianzalogo.png',
                 apodo: 'Lo Gosh el "Lobo Fantasmal"',
-                edad: ''},
+                edad: '45 Años'},
                 {
                 nombre: 'Jaina',
                 bio: 'Jaina Valiente (Jaina Proudmoore en Warcraft III) es la hechicera humana viva más poderosa de la actualidad. Pertenece al linaje de la Casa Valiente cuyos progenitores Daelin y Katherine han servido como gobernantes del reino humano de Kul Tiras. Hasta su reciente regreso a su hogar, ostentó importantes cargos como líder del Kirin Tor y gobernante de Theramore y de Dalaran.',
@@ -20,7 +20,7 @@ import { HeroesComponent } from '../heroes/heroes.component';
                 aparicion: 'World of Warcraft',
                 casa: 'assets/img/alianzalogo.png',
                 apodo: 'La hija del Mar',
-                edad: ''},
+                edad: '43 Años'},
                 {
                 nombre: 'Tyrande',
                 bio: 'Tyrande Susurravientos (WoW) (pronunciado como Ti-Ran-da), es la suma sacerdotisa de la diosa Elune, la líder de las Hermanas de Elune, y la principal responsable del gobierno de los elfos nocturnos. Su corazón pertenece al archidruida Malfurion, con quien combatió en el pasado en muchas ocasiones contra los peligros que acecharon a su raza. Tyrande se encuentra actualmente el Templo de la Luna en la ciudad de Darnassus.',
@@ -28,7 +28,7 @@ import { HeroesComponent } from '../heroes/heroes.component';
                 aparicion: 'World of Warcraft',
                 casa: 'assets/img/alianzalogo.png',
                 apodo: 'Guerrera Nocturna',
-                edad: '8532 Años'},
+                edad: '18532 Años'},
                 {
                 nombre: 'Silvanas',
                 bio: 'Titulada a veces también como "la Dama Oscura" o como "la Reina alma en pena", es la líder suprema de los Renegados, una de las facciones más poderosas de no-muertos en Azeroth. En vida, Sylvanas fue la General Forestal de Lunargenta, cuyo liderazgo y proezas marciales fueron sin igual. Durante la Tercera Guerra, defendió con valentía Quel Thalas de una invasión de la Plaga dirigida por el caballero de la muerte Arthas Menethil. Al final, sin embargo, Sylvanas cayó en batalla. En lugar de honrar a la General Forestal con una muerte rápida, Arthas arrancó su alma y la transformó en una alma en pena: una agente astuta y vengadora del Rey Exánime, apoderada por el odio.',
@@ -36,7 +36,7 @@ import { HeroesComponent } from '../heroes/heroes.component';
                 aparicion: 'World of Warcraft',
                 casa: 'assets/img/hordalogo.png',
                 apodo: 'El Alma en Pena',
-                edad: ''},
+                edad: '230 Años'},
                 {
                 nombre: 'Thrall',
                 // tslint:disable-next-line: max-line-length
@@ -45,7 +45,7 @@ import { HeroesComponent } from '../heroes/heroes.component';
                 aparicion: 'World of Warcraft',
                 casa: 'assets/img/hordalogo.png',
                 apodo: 'Guardian de la Tierra',
-                edad: ''},
+                edad: '115 Años'},
                 {
                 nombre: 'Baine',
                 bio: 'El Gran Jefe Baine Pezuña de Sangre es el hijo del difunto líder tauren Cairne Pezuña de Sangre, a quien admiraba como un modelo a seguir. demás de ser un guerrero sin igual, sus verdaderos talentos se encuentran en la área de la diplomacia. Es una poderosa fuerza en cuanto moderación, sabiduría y unidad dentro de la Horda, especialmente en sus tratos con la Alianza.',
@@ -53,7 +53,7 @@ import { HeroesComponent } from '../heroes/heroes.component';
                 aparicion: 'World of Warcraft',
                 casa: 'assets/img/hordalogo.png',
                 apodo: 'Pezuña de sangre',
-                edad: ''}
+                edad: '150 Años'}
         ];
 
     constructor() {
@@ -71,8 +71,13 @@ import { HeroesComponent } from '../heroes/heroes.component';
         buscarHeroes( termino: string ): Heroe[]{
             const heroesArr: Heroe[] = [];
             termino = termino.toLowerCase();
+
+            // tslint:disable-next-line:prefer-const
             for ( let heroe of this.heroes ){
+
+                // tslint:disable-next-line:prefer-const
                 let nombre = heroe.nombre.toLowerCase();
+
                 if ( nombre.indexOf( termino ) >= 0 ){
                     heroesArr.push( heroe );
                 }
